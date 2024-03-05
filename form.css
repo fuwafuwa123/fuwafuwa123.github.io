@@ -10,6 +10,7 @@ body{
 }
 
 #main{
+    max_width: 100px;
     min-width: 300px;
     padding-top: 30px;
     background-color: white;
