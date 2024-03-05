@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+<!-- 
+Melchor Bulanon 
+Gio Destura
+Khurt Dilanco
+Vincent Dolera
+-->
+<div id="main">
+    <form action="/submit_form" method="post" class="ridge">
+        <h1>Registration Form</h1>
+        <div id="content">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" class="inputL"><br>
+        
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" class="inputL"><br>
+        
+            <label for="nickName">Nick Name:</label><br>
+            <input type="text" id ="nickName" name ="nickName" class="inputL"><br>
+        
+            <label for ="email">Email:</label><br>
+            <input type ="email"id ="email"name ="email" class="inputL"><br>
+        
+            Password:<br>
+            <input type="password" id="password" name="password" class="inputL"><br>
+        
+            Date of Birth:<br>
+            <input type="date" id="dob" name="dob"><br>
+        
+            Gender:<br>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <label for="other">Other</label><br>
+        
+            Mobile:
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="inputL" required>
+            <small></small>
+        
+            Address:
+            <textarea id="address" name="address" rows="4" cols="50" class="inputL"></textarea><br>
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </div>
+        
+    
+    </form>
+</div>
+
+
+</body>
+</html>
